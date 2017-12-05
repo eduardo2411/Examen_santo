@@ -1,0 +1,45 @@
+{%extends 'base.html' %}
+
+{%block formsearch%}
+<form class="navbar-form navbar-right" method="GET" action"">
+    <input type="text" class="form-control" name=q placeholder="Busqueda Rapida">
+</form>
+{%endblock%}
+
+{%block content%}
+
+<h2 cass="sub-header"></h2>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Placas</th>
+        <th>Serie</th>
+        <th>MotFGHJKor</th>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Tipo_vehiculo</th>
+        <th>A</th>
+        <th>Color</th>
+        <th>Slug</th>
+        </tr>
+
+     {%for lib in object_list%}
+
+       <tr>
+        <td>{{lib.Placas}}</td>
+        <td>{{lib.Serie}}</td>
+        <td>{{lib.Motor}}</td>
+        <td>{{lib.Marca}}</td>
+        <td>{{lib.Modelo}}</td>
+        <td>{{lib.Tipo_vehiculo}}</td>
+        <td>{{lib.Ano}}</td>
+        <td>{{lib.Color}}</td>
+        <td>{{lib.slug}}</td>
+       </tr>
+</thead>
+
+
+  {%endfor%}
+
+{%endblock %}

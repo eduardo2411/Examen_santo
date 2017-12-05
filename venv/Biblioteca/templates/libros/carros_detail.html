@@ -1,0 +1,35 @@
+{% extends "index.html" %}
+<input class="form-control" name="q" placeholder="Busqueda Rapida" type="text">
+{%block content%}
+<h2 cass="sub-header"></h2>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Placas</th>
+        <th>Serie</th>
+        <th>Motor</th>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Tipo_vehiculo</th>
+        <th>Ano</th>
+        <th>Color</th>
+        <th>Editar</th>
+        </tr>
+
+   <tr>
+    <td>{{carros.Placas}}</td>
+    <td>{{carros.Serie}}</td>
+    <td>{{carros.Motor}}</td>
+    <td>{{carros.Marca}}</td>
+    <td>{{carros.Modelo}}</td>
+    <td>{{carros.Tipo_vehiculo}}</td>
+    <td>{{carros.Ano}}</td>
+    <td>{{carros.Color}}</td>
+    <td><a href="/carros/{{lib.id}}/editar">link</a></td>
+
+   </tr>
+</thead>
+
+<<a href="/">pricipalx</a>
+{%endblock%}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+<input class="form-control" name="q" placeholder="Busqueda Rapida" type="text">
+{%block content%}
+<h2 cass="sub-header"></h2>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Placas</th>
+        <th>Serie</th>
+        <th>Motor</th>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Tipo_vehiculo</th>
+        <th>Ano</th>
+        <th>Color</th>
+        </tr>
+
+
+
+
+
+
+   <tr>
+    <td>{{libros.Placas}}</td>
+    <td>{{libros.Serie}}</td>
+    <td>{{libros.Motor}}</td>
+    <td>{{libros.Marca}}</td>
+    <td>{{libros.Modelo}}</td>
+    <td>{{libros.Tipo_vehiculo}}</td>
+    <td>{{libros.Ano}}</td>
+    <td>{{libros.Color}}</td>
+
+   </tr>
+</thead>
+
+{%endblock%}
